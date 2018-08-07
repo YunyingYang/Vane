@@ -1,0 +1,19 @@
+
+<div *ngIf="hero">
+    <!-- 使用 *ngIf 来根据条件包含或排除了一段 HTML。
+      (看hero有没有值来决定要不要显示下面这段) -->
+
+  <h2>{{hero.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{hero.id}}</div>
+  <!-- <div><span>name: </span>{{hero.name}}</div> -->
+  <div>
+    <label>name:
+      <input [(ngModel)]="hero.name" placeholder="name">
+      <!-- ngModel用来实现双向数据绑定 -->
+    </label>
+  </div>
+
+</div>
+
+
+
